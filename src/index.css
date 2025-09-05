@@ -5,3 +5,8 @@
   /* padding: 0; */
   box-sizing: border-box;
 }
+
+td,
+th {
+  padding: 10px 10px;
+}
