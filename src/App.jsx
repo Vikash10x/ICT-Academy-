@@ -11,6 +11,9 @@ import { Announcements } from "./components/Announcements";
 import { Content } from "./components/Content";
 import { Theory_Section } from "./components/Theory_Section";
 import { Card_section } from "./components/Card_section";
+import { Progress } from "./components/Progress";
+import { Event_schedule } from "./components/Event_schedule";
+import { Table_Section } from "./components/Table_Section";
 
 import "./App.css";
 const theoryData = [
@@ -40,31 +43,6 @@ const theoryData = [
   },
 ];
 
-const cardData = [
-  {
-    img: "/images/1.jpg",
-    list: [
-      {
-        title: "Learn AI and Gen AI basics",
-        time: "1.5 Hours",
-        title1: "Get started with Microsoft Copilot",
-        time1: "2.7 Hours",
-        title2: "Describe the concepts of cybersecurity",
-        time2: "2.5 Hours",
-      },
-    ],
-  },
-  {
-    img: "images/2.jpg",
-    list: [
-      {
-        title: "Introduction to BIM",
-        time: "5 Hours",
-      },
-    ],
-  },
-];
-
 function App() {
   return (
     <>
@@ -90,20 +68,11 @@ function App() {
         {theoryData.map((item, index) => (
           <Theory_Section key={index} stage={item.stage} desc={item.desc} />
         ))}
-        {cardData.map((item, index) => (
-          <Card_section
-            key={index}
-            img={item.img}
-            title={item.list[0].title}
-            time={item.list[0].time}
-            title1={item.list[0].title1}
-            time1={item.list[0].time1}
-            title2={item.list[0].title2}
-            time2={item.list[0].time2}
-          />
-        ))}
+        <Card_section />
 
-        {/* <Card_section /> */}
+        <Progress />
+        <Event_schedule />
+        <Table_Section />
       </div>
     </>
   );
