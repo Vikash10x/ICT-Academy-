@@ -1,10 +1,5 @@
 import React from "react";
-import { MdOutlineMail } from "react-icons/md";
-import { FaFacebookF } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
+
 import { Navbar } from "./components/Navbar";
 import { Hero_section } from "./components/Hero_section";
 import { Announcements } from "./components/Announcements";
@@ -17,6 +12,7 @@ import { Table_Section } from "./components/Table_Section";
 import { Wide_Section } from "./components/Wide_Section";
 import { Last_Section } from "./components/Last_Section";
 import { Footer } from "./components/Footer";
+import { Top_Section } from "./components/Top_Section";
 
 const theoryData = [
   {
@@ -48,33 +44,8 @@ const theoryData = [
 function App() {
   return (
     <>
-      <div className="">
-        <div className="nav flex items-center justify-around gap-50 bg-[#05255f] text-white ">
-          <div className="flex items-center p-2 cursor-pointer">
-            <MdOutlineMail className="text-2xl" />
-            <div className="text-lg px-1">learnathon@ictacademy.in</div>
-          </div>
-          <div className="">
-            <ul className="flex p-2 gap-15">
-              <li>
-                <FaFacebookF />
-              </li>
-              <li>
-                <FaSquareXTwitter />
-              </li>
-              <li>
-                <FaLinkedinIn />
-              </li>
-              <li>
-                <FaYoutube />
-              </li>
-              <li>
-                <FaInstagram />
-              </li>
-            </ul>
-          </div>
-        </div>
-
+      <div>
+        <Top_Section />
         <Navbar />
         <Hero_section />
         <Announcements />
@@ -83,7 +54,6 @@ function App() {
           <Theory_Section key={index} stage={item.stage} desc={item.desc} />
         ))}
         <Card_section />
-
         <Progress />
         <Event_schedule />
         <Table_Section />
