@@ -33,8 +33,8 @@ export const Table_Section = () => {
             </thead>
 
             <tbody>
-              {data.map((item) => (
-                <tr>
+              {data.map((item, index) => (
+                <tr key={index}>
                   <td className="border border-[#dee2e6] bg-[#fff]">
                     {item.position}
                   </td>
