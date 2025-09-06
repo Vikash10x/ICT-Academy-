@@ -14,8 +14,10 @@ import { Card_section } from "./components/Card_section";
 import { Progress } from "./components/Progress";
 import { Event_schedule } from "./components/Event_schedule";
 import { Table_Section } from "./components/Table_Section";
+import { Wide_Section } from "./components/Wide_Section";
+import { Last_Section } from "./components/Last_Section";
+import { Footer } from "./components/Footer";
 
-import "./App.css";
 const theoryData = [
   {
     stage: "Stage 1",
@@ -52,12 +54,24 @@ function App() {
             <MdOutlineMail className="text-2xl" />
             <div className="text-lg px-1">learnathon@ictacademy.in</div>
           </div>
-          <div className="flex p-2 gap-15">
-            <FaFacebookF className="hover:bg-blue-600" />
-            <FaSquareXTwitter />
-            <FaLinkedinIn />
-            <FaYoutube />
-            <FaInstagram />
+          <div className="">
+            <ul className="flex p-2 gap-15">
+              <li>
+                <FaFacebookF />
+              </li>
+              <li>
+                <FaSquareXTwitter />
+              </li>
+              <li>
+                <FaLinkedinIn />
+              </li>
+              <li>
+                <FaYoutube />
+              </li>
+              <li>
+                <FaInstagram />
+              </li>
+            </ul>
           </div>
         </div>
 
@@ -73,6 +87,9 @@ function App() {
         <Progress />
         <Event_schedule />
         <Table_Section />
+        <Wide_Section />
+        <Last_Section />
+        <Footer />
       </div>
     </>
   );
