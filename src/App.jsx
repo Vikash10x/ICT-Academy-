@@ -14,33 +14,6 @@ import { Last_Section } from "./components/Last_Section";
 import { Footer } from "./components/Footer";
 import { Top_Section } from "./components/Top_Section";
 
-const theoryData = [
-  {
-    stage: "Stage 1",
-    desc: "Institutions and Students to register at the ICT Academy Learnathon 2025 Portal",
-  },
-  {
-    stage: "Stage 2",
-    desc: "Students receive Learnathon 2025 Learning Guide in registered email along with the learning Guidelines",
-  },
-  {
-    stage: "Stage 3",
-    desc: "Student start self-learning from 01st Aug 2025 and complete minimum 10 courses and maximum of 22 courses.",
-  },
-  {
-    stage: "Stage 4",
-    desc: "Students submit the certificates/credentials earned in minimum 10 courses to receive the ICT Academy Learnathon 2025 Certificate.",
-  },
-  {
-    stage: "Stage 5",
-    desc: "College SPOC can report back to the ICT Academy on their student's completion.",
-  },
-  {
-    stage: "Stage 6",
-    desc: "Success Students to receive Learnathon 2025 certificate and the Top Performing Institutions to receive Recognition.",
-  },
-];
-
 function App() {
   return (
     <>
@@ -50,9 +23,7 @@ function App() {
         <Hero_section />
         <Announcements />
         <Content />
-        {theoryData.map((item, index) => (
-          <Theory_Section key={index} stage={item.stage} desc={item.desc} />
-        ))}
+        <Theory_Section />
         <Card_section />
         <Progress />
         <Event_schedule />
