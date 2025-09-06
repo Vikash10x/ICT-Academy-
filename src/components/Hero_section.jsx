@@ -3,7 +3,7 @@ import React from "react";
 export const Hero_section = () => {
   return (
     <div className="bg-[url('./images/slider1.jpg')] bg-cover h-screen ">
-      <div className="flex items-center  justify-center h-[100%]">
+      <div className="flex items-center  justify-center h-[100%] bg-black/50">
         <div className="mt-20">
           <div className="flex justify-center mb-2">
             <img src="public/images/Learnathon_Logo.png" alt="" width={380} />
