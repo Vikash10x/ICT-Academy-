@@ -4,12 +4,12 @@ export const Last_Section = () => {
   return (
     <div className="relative mt-20">
       <div className="h-43"></div>
-      <div className="bg-[#05255f] h-[340px]"></div>
+      <div className="bg-[#05255f] h-[240px]"></div>
 
       <div className="absolute -top-8 w-full flex justify-center">
-        <div className="relative flex justify-center items-center bg-black/80">
+        <div className="relative flex justify-center items-center">
           <img
-            className="w-280 h-100 object-cover "
+            className="w-280 h-100 object-cover"
             src="images/contact.jpg"
             alt=""
           />
