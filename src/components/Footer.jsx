@@ -17,12 +17,36 @@ export const Footer = () => {
             ICT Academy
           </span>
         </div>
-        <div className="flex p-2 gap-15">
-          <FaFacebookF className="hover:bg-blue-600" />
-          <FaSquareXTwitter />
-          <FaLinkedinIn />
-          <FaYoutube />
-          <FaInstagram />
+        <div className="flex gap-6">
+          <li className="list-none">
+            <div className="w-11 h-11 flex items-center justify-center rounded-[5px] hover:bg-blue-400 transition-colors duration-300 cursor-pointer">
+              <FaFacebookF />
+            </div>
+          </li>
+
+          <li className="list-none">
+            <div className="w-11 h-11 flex items-center justify-center rounded-[5px] hover:bg-blue-400 transition-colors duration-300 cursor-pointer">
+              <FaSquareXTwitter />
+            </div>
+          </li>
+
+          <li className="list-none">
+            <div className="w-11 h-11 flex items-center justify-center rounded-[5px] hover:bg-blue-400 transition-colors duration-300 cursor-pointer">
+              <FaLinkedinIn />
+            </div>
+          </li>
+
+          <li className="list-none">
+            <div className="w-11 h-11 flex items-center justify-center rounded-[5px] hover:bg-blue-400 transition-colors duration-300 cursor-pointer">
+              <FaYoutube />
+            </div>
+          </li>
+
+          <li className="list-none">
+            <div className="w-11 h-11 flex items-center justify-center rounded-[5px] hover:bg-blue-400 transition-colors duration-300 cursor-pointer">
+              <FaInstagram />
+            </div>
+          </li>
         </div>
       </div>
     </div>
