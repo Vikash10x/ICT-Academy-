@@ -30,26 +30,6 @@ export const Content = () => {
             </h4>
           </div>
         </div>
-        <div className="bg-[#05255f] w-full">
-          <img
-            className="object-fill h-75 w-full"
-            src="images/video-shape.png"
-            alt=""
-          />
-        </div>
-      </div>
-      <div className=" w-full h-75 flex justify-center items-center text-center relative">
-        <div className="">
-          <a
-            className="text-[18px] underline text-red-600 font-bold"
-            href="http://"
-          >
-            Learnathon 2025
-          </a>
-          <h1 className="text-5xl text-white font-bold mb-5 mt-1">
-            Learnathon Process
-          </h1>
-        </div>
       </div>
     </div>
   );
