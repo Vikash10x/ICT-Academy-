@@ -28,7 +28,7 @@ export const Hero_section = () => {
 
       <div
         ref={first}
-        className="flex overflow-x-scroll scrollbar-hide scroll-smooth w-full h-screen snap-x snap-mandatory"
+        className="flex overflow-x-scroll scrollbar-hide scroll-smooth w-full snap-x snap-mandatory"
       >
         {card.map((item, index) => (
           <div
