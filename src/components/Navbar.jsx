@@ -2,8 +2,8 @@ import React from "react";
 
 export const Navbar = () => {
   return (
-    <div>
-      <nav className="flex gap-33">
+    <div className="sticky top-0 bg-white">
+      <nav className="flex gap-33 ">
         <div>
           <img
             className="cursor-pointer"
