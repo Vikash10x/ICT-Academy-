@@ -7,7 +7,7 @@ export const Navbar = () => {
         <div>
           <img
             className="cursor-pointer"
-            src="public/images/ICTlogo.jpg"
+            src="/images/ICTlogo.jpg"
             alt=""
             width={180}
           />
