@@ -163,7 +163,7 @@ const cardData = [
 
 export const Card_section = ({}) => {
   return (
-    <div className="bg-[url('images/bg1.jpg')] bg-cover bg-fixed py-15">
+    <div className="bg-[url('/images/bg1.jpg')] bg-cover bg-fixed py-15">
       <div className="text-center pb-3">
         {" "}
         <a
