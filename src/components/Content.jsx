@@ -3,7 +3,7 @@ import React from "react";
 export const Content = () => {
   return (
     <div>
-      <div className="bg-[url('images/service-bg2.jpg')] bg-cover bg-center bg-fixed h-screen">
+      <div className="bg-[url('/images/service-bg2.jpg')] bg-cover bg-center bg-fixed h-screen">
         <div className="top h-[100%] flex justify-center items-center gap-10">
           <div className="img flex gap-6">
             <img
