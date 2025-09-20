@@ -51,7 +51,7 @@ export const Theory_Section = () => {
         </div>
       </div>
 
-      <div className="bg-[url('images/bg2.png')]">
+      <div className="bg-[url('/images/bg2.png')]">
         {theoryData.map((item, index) => (
           <div key={index} className="text-center max-w-[800px] m-auto">
             <div className="py-5 bg-stone-100 rounded-[2px] mb-10 ">
